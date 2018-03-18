@@ -5,7 +5,11 @@ import svctools as svc
 
 def input_case(file=None):
     if file:
-        tests = svc.read_file(file, 2)
+        with open(file, 'r') as f:
+            contents = f.readlines()
+        contents = list(map(lambda x: x.strip('\n'), contents))
+        t, c = int(contents[0]), contents[1:]
+        tests = [c[i * 2:2 * (i + 1)] for i in range(t)]
         tests = [[test[0], test[1].split(',')] for test in tests]
     else:
         t = int(input())

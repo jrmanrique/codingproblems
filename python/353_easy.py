@@ -1,14 +1,30 @@
 # https://www.reddit.com/r/dailyprogrammer/comments/826coe/20180305_challenge_353_easy_closest_string/
 
-def input_case():
-    n = int(input())
+def input_case(file=None):
+    if file:
+        with open(file, 'r') as f:
+            contents = f.readlines()
+        contents = list(map(lambda x: x.strip('\n'), contents))
+        t, c = int(contents[0]), contents[1:]
+        tests = []
+        while c:
+            n = c.pop(0)
+            sto = [c.pop(0) for _ in range(int(n))]
+            tests.append(sto)
+        tests = tests[:t]
+    else:
+        t = int(input())
 
-    lines = []
-    for _ in range(n):
-        line = input()
-        lines.append(line)
+        tests = []
+        for _ in range(t):
+            n = int(input())
+            line = []
+            for _ in range(n):
+                x = input()
+                line.append(x)
+            tests.append(line)
 
-    return lines
+    return tests
 
 
 def list_pairs(lst):
@@ -34,9 +50,10 @@ def find_center(lst):
 
 
 def main():
-    case = input_case()
-    center, _ = find_center(case)
-    print(center)
+    cases = input_case('inputs/353_easy.in')
+    for case in cases:
+        center, _ = find_center(case)
+        print(center)
 
 
 if __name__ == '__main__':

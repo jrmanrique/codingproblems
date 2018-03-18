@@ -26,7 +26,8 @@ def get_factors(num, primes=None):
     return [(i, num // i) for i in range(1, ceil(sqrt(num))) if num % i == 0]
 
 
-def compute_complexity(factors):
+def compute_complexity(number, primes=None):
+    factors = get_factors(number, primes=primes)
     sums = [sum(factor) for factor in factors]
     minima = min(sums)
     pair = factors[sums.index(minima)]
@@ -37,14 +38,14 @@ def main():
     # cases = get_cases()
     cases = [12, 456, 4567, 12345, 1234567891011]
     for _, case in enumerate(cases):
-        minima, pair = compute_complexity(get_factors(case))
+        minima, pair = compute_complexity(case)
         print('{} => {} {}'.format(case, minima, pair))
 
 
 def bonus_2():
     NUMBER = 6789101112131415161718192021
     PRIMES = '3*3*3*53*79*1667*20441*19646663*89705489'
-    minima, pair = compute_complexity(get_factors(NUMBER, PRIMES))
+    minima, pair = compute_complexity(NUMBER, PRIMES)
     print('{} => {} {}'.format(NUMBER, minima, pair))
 
 
