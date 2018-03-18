@@ -1,6 +1,5 @@
 # https://www.reddit.com/r/dailyprogrammer/comments/7xkhar/20180214_challenge_351_intermediate_permutation/
 
-
 def input_case(file=None):
     if file:
         with open(file, 'r') as f:
