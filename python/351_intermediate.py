@@ -1,7 +1,5 @@
 # https://www.reddit.com/r/dailyprogrammer/comments/7xkhar/20180214_challenge_351_intermediate_permutation/
 
-import svctools as svc
-
 
 def input_case(file=None):
     if file:
