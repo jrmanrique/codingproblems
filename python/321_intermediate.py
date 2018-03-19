@@ -30,12 +30,14 @@ def solver(word, mapping):
     for a in VALID_A:
         for b in range(26):
             s = decode(a, b, word)
-            decoded.append((s, len([w for w in s.split() if w.lower() in mapping])))
+            score = len([w for w in s.split() if w.lower() in mapping])
+            if score > 0:
+                decoded.append((s, score))
 
-    best = sorted(decoded, key=lambda x: x[1], reverse=True)
-    top = [s for s in best if s[1] == best[0][1]]
+    candidates = sorted(decoded, key=lambda x: x[1], reverse=True)
+    best = [s for s in candidates if s[1] == candidates[0][1]]
 
-    return [s[0] for s in top]
+    return [s[0] for s in best]
 
 
 def main():
