@@ -17,4 +17,5 @@ Answers to [r/DailyProgrammer](https://www.reddit.com/r/dailyprogrammer/) challe
 | 350 | Easy | Bookshelf Problem | :small_blue_diamond: [Python](../master/python/350_easy.py)
 | 349 | Intermediate | Packing Stacks of Boxes | :small_blue_diamond: [Python](../master/python/349_intermediate.py)
 | 348 | Hard | Square Sum Chains | :small_blue_diamond: [Python](../master/python/348_hard.py)
+| 324 | Intermediate | Manual Square Root | :small_blue_diamond: [Python](../master/python/324_intermediate.py)
 | 321 | Intermediate | Affine Cipher Solver | :small_blue_diamond: [Python](../master/python/321_intermediate.py)
