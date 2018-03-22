@@ -65,24 +65,25 @@ def main():
             plt.legend(legend)
         plt.show()
 
+    def clean(inp):
+        inp = list(map(lambda x: x.strip(), inp.splitlines()))
+        pop, seed = map(int, inp[0].split())
+        rates = {}
+        for t in inp[1:]:
+            t = t.split()
+            rates[int(t[0])] = {
+                'si': float(t[1]),
+                'ir': float(t[2]),
+                'sr': float(t[3]),
+            }
+        return pop, seed, rates
+
     inp = """10000 10
     0 0.01 0.01 0.015
     100 0.02 0.01 0.015
     200 0.02 0.03 0.03"""
 
-    inp = list(map(lambda x: x.strip(), inp.splitlines()))
-
-    pop, seed = map(int, inp[0].split())
-    rates = {}
-    for t in inp[1:]:
-        t = t.split()
-        rates[int(t[0])] = {
-            'si': float(t[1]),
-            'ir': float(t[2]),
-            'sr': float(t[3]),
-        }
-
-    mod, gens = randomized(pop, seed, rates, error=0.001)
+    mod, gens = randomized(*clean(inp), error=0.001)
     print('{} generations.'.format(gens))
 
     plot(mod, ['susceptible', 'infected', 'immune'])
