@@ -19,3 +19,6 @@ Answers to [r/DailyProgrammer](https://www.reddit.com/r/dailyprogrammer/) challe
 | 348 | Hard | Square Sum Chains | :small_blue_diamond: [Python](../master/python/348_hard.py)
 | 324 | Intermediate | Manual Square Root | :small_blue_diamond: [Python](../master/python/324_intermediate.py)
 | 321 | Intermediate | Affine Cipher Solver | :small_blue_diamond: [Python](../master/python/321_intermediate.py)
+| 319 | Intermediate | Worm Wars 1 - Basic Epidemiology | :small_blue_diamond: [Python](../master/python/319_intermediate.py)
+| 312 | Intermediate | Next Largest Number | :small_blue_diamond: [Python](../master/python/312_intermediate.py)
+| 287 | Intermediate | Mathagram | :small_orange_diamond: [Python](../master/python/287_intermediate.py)
