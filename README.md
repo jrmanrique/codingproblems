@@ -22,3 +22,4 @@ Answers to [r/DailyProgrammer](https://www.reddit.com/r/dailyprogrammer/) challe
 | 319 | Intermediate | Worm Wars 1 - Basic Epidemiology | :small_blue_diamond: [Python](../master/python/319_intermediate.py)
 | 312 | Intermediate | Next Largest Number | :small_blue_diamond: [Python](../master/python/312_intermediate.py)
 | 287 | Intermediate | Mathagram | :small_orange_diamond: [Python](../master/python/287_intermediate.py)
+| 284 | Hard | Winning the Tournament | :small_blue_diamond: [Python](../master/python/284_hard.py)
