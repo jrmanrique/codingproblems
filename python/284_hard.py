@@ -23,7 +23,7 @@ def winners(mapping, n=1000000):
     for i in range(n):
         mapping = sim(mapping)
 
-    return [mapping[i]['wins'] / n for i in range(1, len(mapping) + 1)]
+    return {i: {'skill': get_skill(i), 'chance': mapping[i]['wins'] / n} for i in range (1, len(mapping) + 1)}
 
 
 def main():
@@ -33,8 +33,8 @@ def main():
     board = {i + 1: {'skill': int(inp[i]), 'wins': 0} for i in range(len(inp))}
 
     sol = winners(board)
-    for i in range(len(inp)):
-        print('{:>2}: {:.6f}'.format(board[i + 1]['skill'], sol[i]))
+    for i in range(1, len(inp) + 1):
+        print('{:>2}: {:.6f}'.format(sol[i]['skill'], sol[i]['chance']))
 
 
 if __name__ == '__main__':
