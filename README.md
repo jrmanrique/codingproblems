@@ -23,3 +23,8 @@ Answers to [r/DailyProgrammer](https://www.reddit.com/r/dailyprogrammer/) challe
 | 312 | Intermediate | Next Largest Number | :small_blue_diamond: [Python](../master/python/312_intermediate.py)
 | 287 | Intermediate | Mathagram | :small_orange_diamond: [Python](../master/python/287_intermediate.py)
 | 284 | Hard | Winning the Tournament | :small_blue_diamond: [Python](../master/python/284_hard.py)
+| 275 | Hard | Splurthian Chemistry 103 | :small_orange_diamond: [Python](../master/python/275_hard.py)
+| 275 | Intermediate | Splurthian Chemistry 102 | :small_blue_diamond: [Python](../master/python/275_intermediate.py)
+| 275 | Easy | Splurthian Chemistry 101 | :small_blue_diamond: [Python](../master/python/275_easy.py)
+| 264 | Intermediate | Gossiping Bus Drivers | :small_orange_diamond: [Python](../master/python/264_intermediate.py)
+| 184 | Intermediate | Radioactive Decay | :small_blue_diamond: [Python](../master/python/184_intermediate.py)
