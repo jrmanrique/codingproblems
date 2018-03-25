@@ -26,5 +26,8 @@ Answers to [r/DailyProgrammer](https://www.reddit.com/r/dailyprogrammer/) challe
 | 275 | Hard | Splurthian Chemistry 103 | :small_orange_diamond: [Python](../master/python/275_hard.py)
 | 275 | Intermediate | Splurthian Chemistry 102 | :small_blue_diamond: [Python](../master/python/275_intermediate.py)
 | 275 | Easy | Splurthian Chemistry 101 | :small_blue_diamond: [Python](../master/python/275_easy.py)
+| 270 | Intermediate | Generating Text with Markov Processes | :small_orange_diamond: [Python](../master/python/270_intermediate.py)
 | 264 | Intermediate | Gossiping Bus Drivers | :small_orange_diamond: [Python](../master/python/264_intermediate.py)
+| 189 | Intermediate | Roman Numeral Conversion | :small_blue_diamond: [Python](../master/python/189_intermediate.py)
 | 184 | Intermediate | Radioactive Decay | :small_blue_diamond: [Python](../master/python/184_intermediate.py)
+| 161 | Intermediate | Appointing Workers | :small_blue_diamond: [Python](../master/python/161_intermediate.py)
