@@ -45,10 +45,10 @@ def zoom_out(hexs):
 def main():
     inputs = [
         '18 3C 7E 7E 18 18 18 18',
-        # 'FF 81 BD A5 A5 BD 81 FF',
-        # 'AA 55 AA 55 AA 55 AA 55',
-        # '3E 7F FC F8 F8 FC 7F 3E',
-        # '93 93 93 F3 F3 93 93 93',
+        'FF 81 BD A5 A5 BD 81 FF',
+        'AA 55 AA 55 AA 55 AA 55',
+        '3E 7F FC F8 F8 FC 7F 3E',
+        '93 93 93 F3 F3 93 93 93',
     ]
 
     for inp in inputs:
