@@ -4,23 +4,36 @@ class Node():
         self.left = left
         self.right = right
 
-    def serialize_to_list(self, sentinel=None):
+    def serialize(self):
+        return str(self)
+
+    def preorder(self, sentinel=None):
         serial = [self.value]
         if self.left:
-            serial.extend(self.left.serialize(sentinel))
+            serial.extend(self.left.preorder(sentinel))
         else:
             serial.append(sentinel)
         if self.right:
-            serial.extend(self.right.serialize(sentinel))
+            serial.extend(self.right.preorder(sentinel))
         else:
             serial.append(sentinel)
         return serial
 
-    def serialize_to_tuple(self):
-        return repr(self)
+    def inorder(self, root):
+        return (self.inorder(root.left) + [root.value] + self.inorder(root.right)) if root else []
+
+    def levelorder(self):
+        nodes = []
+        queue = [self]
+        while queue:
+            node = queue.pop(0)
+            if node:
+                nodes.append(node.value)
+                queue.extend([child for child in [node.left, node.right] if child])
+        return nodes
 
     @classmethod
-    def deserialize_from_tuple(cls, source):
+    def deserialize(cls, source):
         from ast import literal_eval as make_tuple
 
         def _tuple_to_node(tup):
@@ -45,12 +58,13 @@ class Node():
 def main():
     node = Node('root', Node('left', Node('left.left')), Node('right'))
 
-    ser = node.serialize_to_tuple()
-    deser = Node.deserialize_from_tuple(ser)
+    ser = node.serialize()
+    deser = Node.deserialize(ser)
 
+    print(ser)
     print('ASSERT:', deser.left.left.value == 'left.left')
 
-    print('# TODO: Deserialize from list.')
+    print('# TODO: Deserialize using other traversals.')
 
 
 if __name__ == '__main__':

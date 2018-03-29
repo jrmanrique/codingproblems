@@ -10,7 +10,7 @@ def isprime(num):
         for s in range(1, ceil(log2(num - 1))):
             d, rem = divmod(num - 1, 2 ** s)
             if rem == 0 and d % 2:
-                    return s, d
+                return s, d
         return None
 
     def _millerrabin(num):
