@@ -1,10 +1,11 @@
 # codingchallenges
-Answers to challenges from [r/DailyProgrammer](https://www.reddit.com/r/dailyprogrammer/), [Project Euler](https://projecteuler.net/archives), and [Daily Coding Problem](https://www.dailycodingproblem.com/) .
+Answers to various coding challenges and problems around the internet.
 
 ## Index
 
 | Challenge | Problems List |
 | --------- | ------------- |
-| Daily Programmer | [Index](../master/dailyprogrammer/index.md) |
-| Project Euler | [Index](../master/projecteuler/index.md) |
-| Daily Coding Problem | [Index](../master/dailycodingproblem/index.md) |
+| [r/DailyProgrammer](https://www.reddit.com/r/dailyprogrammer/) | [Index](../master/dailyprogrammer/index.md) |
+| [Project Euler](https://projecteuler.net/archives) | [Index](../master/projecteuler/) |
+| [Daily Coding Problem](https://www.dailycodingproblem.com/) | [Index](../master/dailycodingproblem/) |
+| [UVa Online Judge](https://uva.onlinejudge.org/) | [Index](../master/uvaonlinejudge/) |

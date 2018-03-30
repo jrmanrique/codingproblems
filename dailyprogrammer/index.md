@@ -2,6 +2,7 @@
 
 | ID  | Difficulty | Title | Solution |
 | --- | ---------- | ----- | -------- |
+| 355 | Easy | Alphabet Cipher | :small_blue_diamond: [Python](../master/dailyprogrammer/python/355_easy.py)
 | 354 | Intermediate | Integer Complexity 2 | :small_orange_diamond: [Python](../master/dailyprogrammer/python/354_intermediate.py)
 | 354 | Easy | Integer Complexity 1 | :small_blue_diamond: [Python](../master/dailyprogrammer/python/354_easy.py)
 | 353 | Intermediate | Pancake Sorting | :small_orange_diamond: [Python](../master/dailyprogrammer/python/353_intermediate.py)
