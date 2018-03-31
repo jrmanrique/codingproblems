@@ -8,7 +8,7 @@ def isproduct(num):
     for div in range(100, 999):
         n, rem = divmod(num, div)
         if rem == 0:
-            if lennum(n) == 3:
+            if n in range(100, 999):
                 return True, (n, div)
     return False, None
 
