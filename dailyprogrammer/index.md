@@ -1,10 +1,10 @@
-# r/DailyCodingProblem Challenges
+# r/DailyProgrammer Challenges
 
 | ID  | Difficulty | Title | Solution |
 | --- | ---------- | ----- | -------- |
-| 355 | Easy | Alphabet Cipher | :small_blue_diamond: [Python](../dailyprogrammer/python/355_easy.py)
+| 355 | Easy | Alphabet Cipher | :small_blue_diamond: [Python](../dailyprogrammer/python/355_easy.py) 
 | 354 | Intermediate | Integer Complexity 2 | :small_orange_diamond: [Python](../dailyprogrammer/python/354_intermediate.py)
-| 354 | Easy | Integer Complexity 1 | :small_blue_diamond: [Python](../dailyprogrammer/python/354_easy.py)
+| 354 | Easy | Integer Complexity 1 | :small_blue_diamond: [Python](../dailyprogrammer/python/354_easy.py) :small_blue_diamond: [C](../dailyprogrammer/c/355_easy.c)
 | 353 | Intermediate | Pancake Sorting | :small_orange_diamond: [Python](../dailyprogrammer/python/353_intermediate.py)
 | 353 | Easy | Closest String | :small_blue_diamond: [Python](../dailyprogrammer/python/353_easy.py)
 | 352 | Intermediate | 7 Wonders Resource Allocation | :small_blue_diamond: [Python](../dailyprogrammer/python/352_intermediate.py)
