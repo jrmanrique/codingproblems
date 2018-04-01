@@ -1,6 +1,8 @@
+# Ecological Bin Packing
+
 from itertools import permutations
 
-# Ecological Bin Packing
+
 
 def checker(bins, config):
     movements = sum([sum(b) - b[k] for b, k in zip(bins, config)])
@@ -20,15 +22,15 @@ def move(bins):
 
 
 def main():
-    inputs = [
-        '1 2 3 4 5 6 7 8 9',
-        '5 10 5 20 10 5 10 20 10',
-    ]
-
-    for inp in inputs:
-        inp = inp.split()
-        bins = [[int(d) for d in inp[i * 3:(i + 1) * 3]] for i in range(3)]
-        print('{} {}'.format(*move(bins)))
+    while True:
+        try:
+            inp = input()
+        except EOFError:
+            break
+        else:
+            inp = inp.split()
+            bins = [[int(d) for d in inp[i * 3:(i + 1) * 3]] for i in range(3)]
+            print('{} {}'.format(*move(bins)))
 
 
 if __name__ == '__main__':

@@ -10,6 +10,18 @@ def load_file(file):
     return data
 
 
+def load_input():
+    inp = ''
+    while True:
+        try:
+            line = input()
+        except EOFError:
+            break
+        else:
+            inp += line + '\n'
+    return inp
+
+
 def parse_input(string):
     def parse_table(strseq):
         matrix = [[float(num) for num in line.split()] for line in strseq]
@@ -53,11 +65,12 @@ def find_arbitrage(table, starting=0):
 
 
 def main():
-    inp = load_file('inputs/p0104.in')
+    inp = load_input()
     cases = parse_input(inp)
 
     for case in cases:
-        print(find_arbitrage(case))
+        sol = find_arbitrage(case)
+        print(' '.join([str(d) for d in sol]) if sol else 'no arbitrage sequence exists')
 
 
 if __name__ == '__main__':

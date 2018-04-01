@@ -62,13 +62,16 @@ class Blocks():
 def main():
     n = int(input())
 
-    actions = ['']
-    while actions[-1] != 'quit':
-        actions.append(input())
-    actions = actions[1:]
+    actions = []
+    while True:
+        try:
+            action = input()
+        except EOFError:
+            break
+        else:
+            actions.append(action)
 
     b = Blocks(n)
-    print(b)
 
     ACTIONS = {
         'move': {

@@ -6,6 +6,18 @@ def load_file(file):
     return data
 
 
+def load_input():
+    inp = ''
+    while True:
+        try:
+            line = input()
+        except EOFError:
+            break
+        else:
+            inp += line + '\n'
+    return inp
+
+
 def parse_input(string):
     inp = string.splitlines()
 
@@ -26,11 +38,13 @@ def isfit(boxa, boxb):
 def find_path(boxes):
     best = []
     boxes = set(boxes)
-    stack = [[[box], boxes - set(box)] for box in boxes]
+    stack = [[[box], boxes - set(box)] for box in sorted(boxes, reverse=True)]
     while stack:
-        path, remaining= stack.pop()
+        path, remaining = stack.pop()
         if len(path) >= len(best):
             best = path
+            if len(best) == len(boxes):
+                return best
         for child in remaining:
             if isfit(path[-1], child):
                 stack.append([path + [child], remaining - set(child)])
@@ -38,7 +52,7 @@ def find_path(boxes):
 
 
 def main():
-    inp = load_file('inputs/p0103.in')
+    inp = load_input()
     cases = parse_input(inp)
 
     for case in cases:
