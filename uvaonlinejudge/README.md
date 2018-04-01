@@ -15,6 +15,7 @@
 | 01 | 113 | Power of Cryptography | :small_blue_diamond: [Python](../uvaonlinejudge/python/p113.py) |
 | 02 | 272 | TEX Quotes | :small_blue_diamond: [Python](../uvaonlinejudge/python/p272.py) |
 | 04 | 458 | The Decoder | :small_blue_diamond: [Python](../uvaonlinejudge/python/p458.py) |
+| 04 | 494 | Kindergarten Counting Game | :small_blue_diamond: [Python](../uvaonlinejudge/python/p494.py) |
 
 
 ## Contest Volumes
@@ -24,5 +25,7 @@
 | 100 | 10038 | Jolly Jumpers | :small_blue_diamond: [Python](../uvaonlinejudge/python/p10038.py) |
 | 100 | 10055 | Hashmat the Brave Warrior | :small_blue_diamond: [Python](../uvaonlinejudge/python/p10055.py) |
 | 100 | 10071 | Back to High School Physics | :small_blue_diamond: [Python](../uvaonlinejudge/python/p10071.py) |
+| 103 | 10300 | Ecological Premium | :small_blue_diamond: [C](../uvaonlinejudge/c/p10300.py) |
 | 107 | 10783 | Odd Sum | :small_blue_diamond: [Python](../uvaonlinejudge/python/p10783.py) |
 | 111 | 11172 | Relational Operator | :small_blue_diamond: [Python](../uvaonlinejudge/python/p11172.py) |
+| 117 | 11727 | Cost Cutting | :small_blue_diamond: [C](../uvaonlinejudge/c/p11727.c) |
