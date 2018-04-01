@@ -1,4 +1,4 @@
-# codingchallenges
+# codingproblems
 Answers to various coding challenges and problems around the internet.
 
 ## Index
