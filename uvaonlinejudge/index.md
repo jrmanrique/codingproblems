@@ -1,4 +1,6 @@
-# UVa Online Judge Problems
+# UVa Online Judge 
+
+## Problem Set Volumes
 
 | Volume  | Problem | Title | Solution |
 | ------- | ------- | ----- | -------- |
@@ -13,6 +15,12 @@
 | 01 | 113 | Power of Cryptography | :small_blue_diamond: [Python](../uvaonlinejudge/python/p113.py) |
 | 02 | 272 | TEX Quotes | :small_blue_diamond: [Python](../uvaonlinejudge/python/p272.py) |
 | 04 | 458 | The Decoder | :small_blue_diamond: [Python](../uvaonlinejudge/python/p458.py) |
+
+
+## Contest Volumes
+
+| Volume  | Problem | Title | Solution |
+| ------- | ------- | ----- | -------- |
 | 100 | 10038 | Jolly Jumpers | :small_blue_diamond: [Python](../uvaonlinejudge/python/p10038.py) |
 | 100 | 10055 | Hashmat the Brave Warrior | :small_blue_diamond: [Python](../uvaonlinejudge/python/p10055.py) |
 | 100 | 10071 | Back to High School Physics | :small_blue_diamond: [Python](../uvaonlinejudge/python/p10071.py) |
