@@ -5,7 +5,7 @@ Answers to various coding challenges and problems around the internet.
 
 | Challenge | Problems List |
 | --------- | ------------- |
-| [r/DailyProgrammer](https://www.reddit.com/r/dailyprogrammer/) | [Index](../master/dailyprogrammer/index.md) |
-| [Project Euler](https://projecteuler.net/archives) | [Index](../master/projecteuler/) |
+| [r/DailyProgrammer](https://www.reddit.com/r/dailyprogrammer/) | [Index](../master/dailyprogrammer/README.md) |
+| [Project Euler](https://projecteuler.net/archives) | [Index](../master/projecteuler/README.md) |
 | [Daily Coding Problem](https://www.dailycodingproblem.com/) | [Index](../master/dailycodingproblem/) |
-| [UVa Online Judge](https://uva.onlinejudge.org/) | [Index](../master/uvaonlinejudge/index.md) |
+| [UVa Online Judge](https://uva.onlinejudge.org/) | [Index](../master/uvaonlinejudge/README.md) |
