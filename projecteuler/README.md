@@ -78,3 +78,8 @@
 | 74 | Digit factorial chains | :small_blue_diamond: [Python](../projecteuler/python/p074.py)
 | 75 | Singular integer right triangles | :small_blue_diamond: [Python](../projecteuler/python/p075.py)
 | 76 | Counting summations | :small_blue_diamond: [Python](../projecteuler/python/p076.py)
+| 81 | Path sum: two ways | :small_blue_diamond: [Python](../projecteuler/python/p081.py)
+| 87 | Prime power triples | :small_blue_diamond: [Python](../projecteuler/python/p087.py)
+| 92 | Square digit chains | :small_orange_diamond: [Python](../projecteuler/python/p092.py)
+| 97 | Large non-Mersenne prime | :small_blue_diamond: [Python](../projecteuler/python/p097.py)
+| 206 | Concealed square | :small_blue_diamond: [Python](../projecteuler/python/p206.py)

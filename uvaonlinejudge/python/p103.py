@@ -1,5 +1,8 @@
 # Stacking Boxes
 
+from collections import deque
+
+
 def load_file(file):
     with open(file) as f:
         data = f.read()
@@ -38,7 +41,7 @@ def isfit(boxa, boxb):
 def find_path(boxes):
     best = []
     boxes = set(boxes)
-    stack = [[[box], boxes - set(box)] for box in sorted(boxes, reverse=True)]
+    stack = deque([[[box], boxes - set(box)] for box in sorted(boxes, reverse=True)])
     while stack:
         path, remaining = stack.pop()
         if len(path) >= len(best):

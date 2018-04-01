@@ -1,5 +1,6 @@
 # Arbitrage
 
+from collections import deque
 from functools import reduce
 from operator import mul
 
@@ -47,10 +48,10 @@ def convert(table, seq):
 
 def find_arbitrage(table, starting=0):
     denoms = set([d for d, _ in enumerate(table)])
-    queue = [[starting, starting]]
+    stack = deque([[starting, starting]])
     best = ([], 1)
-    while queue:
-        path = queue.pop()
+    while stack:
+        path = stack.pop()
         if len(path) >= len(denoms):
             continue
         for child in denoms - set([path[-2]]):
@@ -58,7 +59,7 @@ def find_arbitrage(table, starting=0):
             cash = convert(table, new)
             if cash >= best[1]:
                 best = (new, cash)
-            queue.append(new)
+            stack.append(new)
     if best[0]:
         return [i + 1 for i in best[0]]
     return None
