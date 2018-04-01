@@ -3,14 +3,8 @@
 import pickle
 
 from itertools import combinations as cmb
-from math import sqrt
 
-
-def isprime(num):
-    for factor in range(2, int(sqrt(num) + 1)):
-        if num % factor == 0:
-            return False
-    return True
+from euler.mathtools import isprime
 
 
 def isspecial(seq):

@@ -1,7 +1,6 @@
 # https://projecteuler.net/problem=38
 
-def get_digits(num):
-    return [int(d) for d in str(num)]
+from euler.typetools import get_digits
 
 
 def ispandigital(num):

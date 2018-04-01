@@ -3,11 +3,7 @@
 from itertools import permutations as perm
 from itertools import cycle
 
-
-def load_file(file):
-    with open(file, 'r') as f:
-        data = f.read()
-    return data
+from euler.helpers import load_file
 
 
 def xor(a, b):

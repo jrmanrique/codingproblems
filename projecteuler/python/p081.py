@@ -1,10 +1,6 @@
 # https://projecteuler.net/problem=81
 
-
-def load_file(file):
-    with open(file) as f:
-        data = f.read()
-    return data
+from euler.helpers import load_file
 
 
 def backtrack(start, goal, matrix):

@@ -2,9 +2,7 @@
 
 from math import factorial
 
-
-def get_digits(num):
-    return [int(d) for d in str(num)]
+from euler.typetools import get_digits
 
 
 def main():

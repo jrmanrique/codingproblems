@@ -2,15 +2,7 @@
 
 from math import sqrt
 
-
-def deepflatten(lst):
-    result = []
-    for item in lst:
-        if isinstance(item, list):
-            result.extend(deepflatten(item))
-        else:
-            result.append(item)
-    return result
+from euler.typetools import deepflatten
 
 
 def get_divisors(num):

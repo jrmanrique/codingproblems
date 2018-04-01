@@ -1,12 +1,6 @@
 # https://projecteuler.net/problem=69
 
-def sieve(num):
-    sieve = {n: True for n in range(2, num + 1)}
-    for n in range(2, num + 1):
-        if sieve[n]:
-            for a in range(2, num // n + 1):
-                sieve[n * a] = False
-    return [k for k, v in sieve.items() if v]
+from euler.mathtools import sieve
 
 
 def main():

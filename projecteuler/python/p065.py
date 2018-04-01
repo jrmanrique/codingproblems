@@ -1,13 +1,6 @@
 # https://projecteuler.net/problem=65
 
-def deepflatten(lst):
-    result = []
-    for item in lst:
-        if isinstance(item, list):
-            result.extend(deepflatten(item))
-        else:
-            result.append(item)
-    return result
+from euler.typetools import deepflatten
 
 
 def main():

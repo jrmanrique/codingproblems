@@ -2,14 +2,7 @@
 
 from itertools import product
 
-
-def sieve(limit):
-    sieve = {n: True for n in range(2, limit + 1)}
-    for n in range(2, limit + 1):
-        if sieve[n]:
-            for a in range(2, limit // n + 1):
-                sieve[n * a] = False
-    return [k for k, v in sieve.items() if v]
+from euler.mathtools import sieve
 
 
 def main():

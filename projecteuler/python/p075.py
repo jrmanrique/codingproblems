@@ -1,12 +1,7 @@
 # https://projecteuler.net/problem=75
 
 from math import sqrt
-
-
-def gcf(a, b):
-    while b:
-        a, b = b, a % b
-    return a
+from euler.mathtools import gcf
 
 
 def main():
@@ -15,7 +10,7 @@ def main():
     triangles = {k: 0 for k in range(1, limit + 1)}
     for m in range(2, int(sqrt(limit / 2)) + 1):
         for n in range(1, m):
-            if (n + m) % 2 and gcf(n, m) == 1:
+            if (n + m) % 2 and gcf([n, m]) == 1:
                 a = m ** 2 + n ** 2
                 b = 2 * m * n
                 c = m ** 2 - n ** 2

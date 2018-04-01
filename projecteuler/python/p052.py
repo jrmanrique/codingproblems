@@ -1,10 +1,6 @@
 # https://projecteuler.net/problem=52
 
-from itertools import permutations
-
-
-def permute(num):
-    return (int(''.join(p)) for p in permutations(str(num)))
+from euler.mathtools import permute
 
 
 def main():

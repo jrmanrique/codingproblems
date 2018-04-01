@@ -1,21 +1,8 @@
 # https://projecteuler.net/problem=49
 
-from itertools import combinations, permutations
-from math import sqrt
+from itertools import combinations
 
-
-def isprime(num):
-    if num < 0:
-        return False
-    for factor in range(2, int(sqrt(num) + 1)):
-        if num % factor == 0:
-            return False
-    return True
-
-
-def generate_perms(num):
-    num = str(num)
-    return (int(''.join(map(str, p))) for p in permutations(num))
+from euler.mathtools import isprime, permute
 
 
 def extend_set(setx, seq):
@@ -36,7 +23,7 @@ def main():
     perms = set()
     sols = []
     for n in range(1002, 9011):
-        perms = set(filter(isprime, filter(lambda x: x >= 1000, generate_perms(n))))
+        perms = set(filter(isprime, filter(lambda x: x >= 1000, permute(n))))
         combs = set(combinations(perms, 3))
 
         for comb in combs:

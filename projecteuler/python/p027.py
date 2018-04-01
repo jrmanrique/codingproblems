@@ -1,15 +1,6 @@
 # https://projecteuler.net/problem=27
 
-from math import sqrt
-
-
-def isprime(num):
-    if num < 0:
-        return False
-    for factor in range(2, int(sqrt(num) + 1)):
-        if num % factor == 0:
-            return False
-    return True
+from euler.mathtools import isprime
 
 
 def get_next_prime(num):

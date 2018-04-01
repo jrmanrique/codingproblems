@@ -1,9 +1,6 @@
 # https://projecteuler.net/problem=22
 
-def load_file(file):
-    with open(file, 'r') as f:
-        data = f.read()
-    return data
+from euler.helpers import load_file
 
 
 def score(name):

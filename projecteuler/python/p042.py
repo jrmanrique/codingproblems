@@ -1,9 +1,6 @@
 # https://projecteuler.net/problem=42
 
-def load_data(file):
-    with open(file, 'r') as f:
-        data = f.read()
-    return data
+from euler.helpers import load_file
 
 
 def score_word(word):
@@ -30,7 +27,7 @@ def istriword(word):
 
 
 def main():
-    inp = load_data('inputs/p042.in')
+    inp = load_file('inputs/p042.in')
     inp = [i[1:-1] for i in inp.split(',')]
 
     counter = 0

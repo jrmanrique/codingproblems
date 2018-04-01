@@ -1,12 +1,13 @@
-def sumdig(num):
-    return sum([int(d) for d in str(num)])
+# https://projecteuler.net/problem=56
+
+from euler.typetools import get_digits
 
 
 def main():
     best = (0, 0 ,0)
     for a in range(1, 100):
         for b in range(1, 100):
-            ans = sumdig(pow(a, b))
+            ans = sum(get_digits(pow(a, b)))
             if ans > best[2]:
                 best = (a, b, ans)
 

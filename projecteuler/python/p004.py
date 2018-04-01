@@ -1,7 +1,6 @@
 # https://projecteuler.net/problem=4
 
-def lennum(num):
-    return len(str(num))
+from euler.typetools import ispalindrome as _ispalindrome
 
 
 def isproduct(num):
@@ -14,13 +13,6 @@ def isproduct(num):
 
 
 def ispalindrome(num):
-    def _ispalindrome(string):
-        if len(string) <= 1:
-            return True
-        elif string[0] == string[-1]:
-            return _ispalindrome(string[1:-1])
-        return False
-
     return _ispalindrome(str(num))
 
 

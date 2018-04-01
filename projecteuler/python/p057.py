@@ -1,3 +1,5 @@
+# https://projecteuler.net/problem=57
+
 def main():
     from math import log10
 

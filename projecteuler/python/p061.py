@@ -1,8 +1,6 @@
 # https://projecteuler.net/problem=61
 
-def quadratic(a, b, c):
-    det = (b ** 2 - 4 * a * c) ** 0.5
-    return ((-b - det) / (2 * a)), ((-b + det) / (2 * a))
+from euler.mathtools import quadratic
 
 
 def identify(num):
