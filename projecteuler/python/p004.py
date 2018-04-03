@@ -1,6 +1,6 @@
 # https://projecteuler.net/problem=4
 
-from euler.typetools import ispalindrome as _ispalindrome
+from euler.helpers import ispalindrome as _ispalindrome
 
 
 def isproduct(num):

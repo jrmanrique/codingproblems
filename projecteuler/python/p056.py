@@ -1,6 +1,6 @@
 # https://projecteuler.net/problem=56
 
-from euler.typetools import get_digits
+from euler.helpers import get_digits
 
 
 def main():

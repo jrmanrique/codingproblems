@@ -2,7 +2,7 @@
 
 from math import sqrt
 
-from euler.typetools import deepflatten
+from euler.helpers import deepflatten
 
 
 def generate_nth_trinum(n):

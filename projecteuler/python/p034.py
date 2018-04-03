@@ -2,7 +2,7 @@
 
 from math import factorial
 
-from euler.typetools import get_digits
+from euler.helpers import get_digits
 
 
 def main():

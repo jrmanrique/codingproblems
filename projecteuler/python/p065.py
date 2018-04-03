@@ -1,6 +1,6 @@
 # https://projecteuler.net/problem=65
 
-from euler.typetools import deepflatten
+from euler.helpers import deepflatten
 
 
 def main():

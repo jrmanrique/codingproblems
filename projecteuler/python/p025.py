@@ -1,7 +1,7 @@
 # https://projecteuler.net/problem=25
 
 from euler.mathtools import fibonacci
-from euler.typetools import lend
+from euler.helpers import lend
 
 
 def main():
