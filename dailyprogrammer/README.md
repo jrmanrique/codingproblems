@@ -2,6 +2,7 @@
 
 | ID  | Difficulty | Title | Solution |
 | --- | ---------- | ----- | -------- |
+| 356 | Intermediate | Goldbach's Weak Conjecture | :small_blue_diamond: [Python](../dailyprogrammer/python/356_intermediate.py)
 | 355 | Easy | Alphabet Cipher | :small_blue_diamond: [Python](../dailyprogrammer/python/355_easy.py) 
 | 354 | Intermediate | Integer Complexity 2 | :small_orange_diamond: [Python](../dailyprogrammer/python/354_intermediate.py)
 | 354 | Easy | Integer Complexity 1 | :small_blue_diamond: [Python](../dailyprogrammer/python/354_easy.py) :small_blue_diamond: [C](../dailyprogrammer/c/355_easy.c)
