@@ -1,9 +1,9 @@
-# UVa Online Judge Problems
+# Project Euler Problems
 
  Problem | Title | Solution |
  ------- | ----- | -------- |
-| 1 | Multiples of 3 and 5 | :small_blue_diamond: [Python](../projecteuler/python/p001.py) :small_blue_diamond: [C](../projecteuler/c/p001.c) :small_blue_diamond: [R](../projecteuler/r/p001.R)
-| 2 | Even Fibonacci numbers | :small_blue_diamond: [Python](../projecteuler/python/p002.py) :small_blue_diamond: [C](../projecteuler/c/p002.c) :small_blue_diamond: [R](../projecteuler/r/p002.R)
+| 1 | Multiples of 3 and 5 | :small_blue_diamond: [Python](../projecteuler/python/p001.py) :small_blue_diamond: [C](../projecteuler/c/p001.c) :small_blue_diamond: [R](../projecteuler/r/p001.R) :small_blue_diamond: [Lua](../projecteuler/lua/p001.lua)
+| 2 | Even Fibonacci numbers | :small_blue_diamond: [Python](../projecteuler/python/p002.py) :small_blue_diamond: [C](../projecteuler/c/p002.c) :small_blue_diamond: [R](../projecteuler/r/p002.R) :small_blue_diamond: [Lua](../projecteuler/lua/p002.lua)
 | 3 | Largest prime factor | :small_blue_diamond: [Python](../projecteuler/python/p003.py) :small_blue_diamond: [C](../projecteuler/c/p003.c) :small_blue_diamond: [R](../projecteuler/r/p003.R)
 | 4 | Largest palindrome product | :small_blue_diamond: [Python](../projecteuler/python/p004.py) :small_blue_diamond: [C](../projecteuler/c/p003.c)
 | 5 | Smallest multiple | :small_blue_diamond: [Python](../projecteuler/python/p005.py)
@@ -24,7 +24,7 @@
 | 20 | Factorial digit sum | :small_blue_diamond: [Python](../projecteuler/python/p020.py)
 | 21 | Amicable numbers | :small_blue_diamond: [Python](../projecteuler/python/p021.py)
 | 22 | Names scores | :small_blue_diamond: [Python](../projecteuler/python/p022.py)
-| 23 | Non-abundant sums | :small_blue_diamond: [Python](../projecteuler/python/p023.py)
+| 23 | Non-abundant sums | :small_blue_diamond: [Python](../projecteuler/python/p023.py) :small_blue_diamond: [Lua](../projecteuler/lua/p023.lua)
 | 24 | Lexicographic permutations | :small_blue_diamond: [Python](../projecteuler/python/p024.py)
 | 25 | 1000-digit Fibonacci number | :small_blue_diamond: [Python](../projecteuler/python/p025.py)
 | 26 | Reciprocal cycles | :small_blue_diamond: [Python](../projecteuler/python/p026.py)
@@ -82,8 +82,9 @@
 | 87 | Prime power triples | :small_blue_diamond: [Python](../projecteuler/python/p087.py)
 | 92 | Square digit chains | :small_orange_diamond: [Python](../projecteuler/python/p092.py)
 | 97 | Large non-Mersenne prime | :small_blue_diamond: [Python](../projecteuler/python/p097.py)
-| 206 | Concealed square | :small_orange_diamond: [Python](../projecteuler/python/p206.py)
 | 205 | Dice game | :small_blue_diamond: [Python](../projecteuler/python/p205.py)
+| 206 | Concealed square | :small_orange_diamond: [Python](../projecteuler/python/p206.py)
+| 243 | Resilience | :small_orange_diamond: [Python](../projecteuler/python/p243.py) :small_orange_diamond: [Lua](../projecteuler/lua/p243.lua)
 | 345 | Matrix sum | :small_orange_diamond: [Python](../projecteuler/python/p345.py)
 | 357 | Prime generating integers | :small_orange_diamond: [Python](../projecteuler/python/p357.py)
 | 549 | Divisibility of factorials | :small_orange_diamond: [Python](../projecteuler/python/p549.py)

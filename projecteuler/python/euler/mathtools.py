@@ -52,7 +52,7 @@ def get_coprimes(num):
 
 
 def phi(num):
-    return len(get_coprimes(num))
+    return len(list(get_coprimes(num)))
 
 
 @lru_cache()
