@@ -82,6 +82,7 @@
 | 87 | Prime power triples | :small_blue_diamond: [Python](../projecteuler/python/p087.py)
 | 92 | Square digit chains | :small_orange_diamond: [Python](../projecteuler/python/p092.py)
 | 97 | Large non-Mersenne prime | :small_blue_diamond: [Python](../projecteuler/python/p097.py)
+| 145 | How many reversible numbers are there below one-billion? | :small_orange_diamond: [Lua](../projecteuler/python/p145.py)
 | 205 | Dice game | :small_blue_diamond: [Python](../projecteuler/python/p205.py)
 | 206 | Concealed square | :small_orange_diamond: [Python](../projecteuler/python/p206.py)
 | 243 | Resilience | :small_orange_diamond: [Python](../projecteuler/python/p243.py) :small_orange_diamond: [Lua](../projecteuler/lua/p243.lua)
