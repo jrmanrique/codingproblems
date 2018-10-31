@@ -1,16 +1,45 @@
 from functools import lru_cache, reduce
 from itertools import chain, combinations, permutations
-from math import sqrt
+from math import ceil, sqrt
 from operator import mul
 
 
-def sieve(limit):
+def sieve_of_erathosthenes(limit):
     sieve = {n: True for n in range(2, limit + 1)}
     for n in range(2, limit + 1):
         if sieve[n]:
             for a in range(2, limit // n + 1):
                 sieve[n * a] = False
     return [k for k, v in sieve.items() if v]
+
+
+def sieve_of_atkin(limit):
+    sieve = {i: False for i in range(1, limit + 1)}
+
+    for x in range(1, ceil(sqrt(limit))):
+        for y in range(1, ceil(sqrt(limit))):
+            n = 4 * x ** 2 + y ** 2
+            if n <= limit and n % 60 in [1, 13, 17, 29, 37, 41, 49, 53]:
+                sieve[n] = not sieve[n]
+
+            n = 3 * x ** 2 + y ** 2
+            if n <= limit and n % 60 in [7, 19, 31, 43]:
+                sieve[n] = not sieve[n]
+
+            n = 3 * x ** 2 - y ** 2
+            if x > y and n <= limit and n % 60 in [11, 23, 47, 59]:
+                sieve[n] = not sieve[n]
+
+    for n in range(1, ceil(sqrt(limit))):
+        if sieve[n]:
+            k = 1
+            while k * n ** 2 <= limit:
+                sieve[k * n ** 2] = False
+                k += 1
+
+    results = [2, 3, 5] + [k for k, v in sieve.items() if v]
+
+    return results
 
 
 def isprime(num):
