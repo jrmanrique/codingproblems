@@ -49,10 +49,22 @@ local function sieveOfAtkin(limit)
   return results
 end
 
+function properDivisors(num)
+  local divisors = {1}
+  for d = 2, ceil(sqrt(num)) do
+    if num % d == 0 then
+      divisors[#divisors + 1] = d
+      divisors[#divisors + 1] = num / d
+    end
+  end
+  return divisors
+end
+
 -- Function index.
 
 local M = {}
 
 M.sieveOfAtkin = sieveOfAtkin
+M.properDivisors = properDivisors
 
 return M
